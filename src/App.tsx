@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="header">
       <img
-        src="/types/Poke_Ball.png"
+        src={`${process.env.PUBLIC_URL}/Poke_Ball.png`}
         alt="Pokéball"
         className="header-logo left-logo"
       />
@@ -21,7 +21,7 @@ function Header() {
       <span className="header-title">Pokémon Data Explorer</span>
 
       <img
-        src="/Pokemon.png"  
+        src={`${process.env.PUBLIC_URL}/Pokemon.png`}
         alt="Pikachu"
         className="header-logo right-logo"
       />

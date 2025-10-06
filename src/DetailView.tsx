@@ -91,8 +91,7 @@ export default function DetailView() {
         <div className="detail-layout">
           <div className="detail-left">
             <img
-              src={    pokemon.sprites.front_default ||
-                `${process.env.PUBLIC_URL}/Poke_Ball_small.png`
+              src={ pokemon.sprites.front_default ||`${process.env.PUBLIC_URL}/Poke_Ball_small.png`
               }
               alt={pokemon.name}
               className="pokemon-image"
