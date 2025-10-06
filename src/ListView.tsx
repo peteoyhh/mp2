@@ -197,9 +197,10 @@ export default function ListView() {
                   src={imgUrl}
                   alt={p.name}
                   className="pokemon-img"
-                  onError={(e) =>
-                    (e.currentTarget as HTMLImageElement).src = "/types/Poke_Ball.png"
-                  }
+                  onError={(e) =>{
+                    (e.currentTarget as HTMLImageElement).src = `${process.env.PUBLIC_URL}/types/Poke_Ball.png`;
+
+                  }}
                 />
                 <p className="pokemon-name">{p.name}</p>
                 <p className="pokemon-id">#{id}</p>
