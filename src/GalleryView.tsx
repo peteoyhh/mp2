@@ -85,7 +85,7 @@ export default function GalleryView() {
             title={t}
           >
             <img
-              src={`${process.env.PUBLIC_URL}/types/${t}.png`}
+              src={`${process.env.PUBLIC_URL}/${t}.png`}
               alt={t}
               className="type-icon"
             />
