@@ -198,7 +198,7 @@ export default function ListView() {
                   alt={p.name}
                   className="pokemon-img"
                   onError={(e) =>{
-                    (e.currentTarget as HTMLImageElement).src = `${process.env.PUBLIC_URL}/types/Poke_Ball.png`;
+                    (e.currentTarget as HTMLImageElement).src = `${process.env.PUBLIC_URL}types/Poke_Ball.png`;
 
                   }}
                 />
