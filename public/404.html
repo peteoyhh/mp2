@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./index.html" />
+    <script>
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+      window.location.href = location.origin + '/mp2/';
+    </script>
   </head>
-  <body>
-  </body>
 </html>
