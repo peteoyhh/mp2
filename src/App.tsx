@@ -34,7 +34,7 @@ function Header() {
 
 function Navbar() {
   const { pathname } = useLocation();
-  const listActive = pathname.startsWith("/list") || pathname.startsWith("/pokemon");
+  const listActive = pathname.startsWith("/list");
   const galleryActive = pathname.startsWith("/gallery");
 
   return (
