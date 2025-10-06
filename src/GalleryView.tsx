@@ -72,20 +72,24 @@ export default function GalleryView() {
   return (
     <div className="gallery-container">
       <h2 className="gallery-title">Pokémon Gallery</h2>
-
+  
       <div className="type-buttons">
         {types.map((t) => (
-            <button
+          <button
             key={t}
             onClick={() => {
-                setSelectedType(selectedType === t ? null : t);
-                setPage(0);
+              setSelectedType(selectedType === t ? null : t);
+              setPage(0);
             }}
             className={`type-button ${selectedType === t ? "active" : ""}`}
             title={t}
           >
-            <img src={`/types/${t}.png`} alt={t} className="type-icon" />
-            </button>
+            <img
+              src={`${process.env.PUBLIC_URL}/types/${t}.png`}
+              alt={t}
+              className="type-icon"
+            />
+          </button>
         ))}
     
 
