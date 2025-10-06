@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+if (sessionStorage.redirect) {
+  const redirectPath = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  window.history.replaceState(null, '', redirectPath);
+}
+
+
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
