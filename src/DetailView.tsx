@@ -92,12 +92,12 @@ export default function DetailView() {
           <div className="detail-left">
             <img
               src={    pokemon.sprites.front_default ||
-                `${process.env.PUBLIC_URL}/types/Poke_Ball_small.png`
+                `${process.env.PUBLIC_URL}/Poke_Ball_small.png`
               }
               alt={pokemon.name}
               className="pokemon-image"
               onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src = `${process.env.PUBLIC_URL}/types/Poke_Ball_small.png`;
+                (e.currentTarget as HTMLImageElement).src = `${process.env.PUBLIC_URL}/Poke_Ball_small.png`;
               }}
             />
           </div>
